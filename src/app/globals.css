@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+html.dark {
+  color-scheme: dark !important;
+}
+
+html:not(.dark) {
+  color-scheme: light !important;
+}
+
+html.dark body {
+  background-color: rgb(17, 24, 39) !important;
+  color: rgb(249, 250, 251) !important;
+}
+
+html:not(.dark) body {
+  background-color: rgb(249, 250, 251) !important;
+  color: rgb(17, 24, 39) !important;
+}
+
+html.dark header {
+  background-color: rgb(31, 41, 55) !important;
+  border-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) header {
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(229, 231, 235) !important;
+}
+
+html.dark article {
+  background-color: rgb(31, 41, 55) !important;
+}
+
+html:not(.dark) article {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+html.dark .bg-white {
+  background-color: rgb(31, 41, 55) !important;
+}
+
+html:not(.dark) .bg-white {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+html.dark input,
+html.dark select {
+  background-color: rgb(55, 65, 81) !important;
+  border-color: rgb(75, 85, 99) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html:not(.dark) input,
+html:not(.dark) select {
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(209, 213, 219) !important;
+  color: rgb(17, 24, 39) !important;
+}
+
+html.dark button {
+  border-color: rgb(75, 85, 99) !important;
+}
+
+html:not(.dark) button {
+  border-color: rgb(209, 213, 219) !important;
+}
+
+html.dark .text-gray-900 {
+  color: rgb(255, 255, 255) !important;
+}
+
+html:not(.dark) .text-gray-900 {
+  color: rgb(17, 24, 39) !important;
+}
+
+html.dark .text-gray-600 {
+  color: rgb(209, 213, 219) !important;
+}
+
+html:not(.dark) .text-gray-600 {
+  color: rgb(75, 85, 99) !important;
+}
+
+html.dark .text-gray-700 {
+  color: rgb(229, 231, 235) !important;
+}
+
+html:not(.dark) .text-gray-700 {
+  color: rgb(55, 65, 81) !important;
+}
+
+html.dark button:hover {
+  background-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) button:hover {
+  background-color: rgb(249, 250, 251) !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: rgb(75, 85, 99) !important;
+  color: rgb(229, 231, 235) !important;
+}
+
+html:not(.dark) .bg-gray-100 {
+  background-color: rgb(243, 244, 246) !important;
+  color: rgb(55, 65, 81) !important;
+}
+
+html.dark button[class*="bg-gray-100"] {
+  background-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) button[class*="bg-gray-100"] {
+  background-color: rgb(243, 244, 246) !important;
+}
+
+html.dark .text-gray-400 {
+  color: rgb(156, 163, 175) !important;
+}
+
+html:not(.dark) .text-gray-400 {
+  color: rgb(156, 163, 175) !important;
+}
+
+html.dark .text-gray-500 {
+  color: rgb(107, 114, 128) !important;
+}
+
+html:not(.dark) .text-gray-500 {
+  color: rgb(107, 114, 128) !important;
+}
+
+html.dark .bg-blue-600 {
+  background-color: rgb(37, 99, 235) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html:not(.dark) .bg-blue-600 {
+  background-color: rgb(37, 99, 235) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html.dark .border-gray-300 {
+  border-color: rgb(75, 85, 99) !important;
+}
+
+html:not(.dark) .border-gray-300 {
+  border-color: rgb(209, 213, 219) !important;
+}
+
+html.dark button[title*="Show only favorites"] {
+  background-color: rgba(185, 28, 28, 0.3) !important;
+  color: rgb(248, 113, 113) !important;
+}
+
+html:not(.dark) button[title*="Show only favorites"] {
+  background-color: rgb(254, 226, 226) !important;
+  color: rgb(185, 28, 28) !important;
+}
+
+html.dark button[title*="Show all characters"] {
+  background-color: rgb(220, 38, 38) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html:not(.dark) button[title*="Show all characters"] {
+  background-color: rgb(220, 38, 38) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html.dark button.w-full {
+  background-color: rgb(75, 85, 99) !important;
+  color: rgb(229, 231, 235) !important;
+}
+
+html:not(.dark) button.w-full {
+  background-color: rgb(243, 244, 246) !important;
+  color: rgb(55, 65, 81) !important;
+}
+
+html.dark .bg-gray-50 {
+  background-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) .bg-gray-50 {
+  background-color: rgb(249, 250, 251) !important;
+}
+
+html.dark .border-gray-100 {
+  border-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) .border-gray-100 {
+  border-color: rgb(243, 244, 246) !important;
+}
+
+html.dark .border-gray-200 {
+  border-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) .border-gray-200 {
+  border-color: rgb(229, 231, 235) !important;
+}
+
+html.dark .border-gray-700 {
+  border-color: rgb(55, 65, 81) !important;
+}
+
+html:not(.dark) .border-gray-700 {
+  border-color: rgb(55, 65, 81) !important;
+}
+
+html.dark .text-gray-800 {
+  color: rgb(229, 231, 235) !important;
+}
+
+html:not(.dark) .text-gray-800 {
+  color: rgb(31, 41, 55) !important;
+}
+
+html.dark .text-blue-600 {
+  color: rgb(96, 165, 250) !important;
+}
+
+html:not(.dark) .text-blue-600 {
+  color: rgb(37, 99, 235) !important;
+}
+
+html.dark .text-blue-400 {
+  color: rgb(96, 165, 250) !important;
+}
+
+html:not(.dark) .text-blue-400 {
+  color: rgb(96, 165, 250) !important;
+}
+
+html.dark .bg-green-100 {
+  opacity: 0.9;
+}
+
+html:not(.dark) .bg-green-100 {
+  opacity: 1;
+}
