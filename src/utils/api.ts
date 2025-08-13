@@ -46,12 +46,12 @@ async function handleResponse<T>(response: Response): Promise<T> {
 
   try {
     return await response.json();
-  } catch (error) {
+  } catch {
     throw new ApiError('Failed to parse response', 500, 'server');
   }
 }
 
-function buildQueryString(params: Record<string, any>): string {
+function buildQueryString(params: Record<string, string | number>): string {
   const searchParams = new URLSearchParams();
   
   Object.entries(params).forEach(([key, value]) => {

@@ -12,7 +12,7 @@ export default function Home() {
   const { getFavoriteIds } = useFavorites();
   
   const queryParams = useMemo(() => {
-    const params: any = {
+    const params: Record<string, string | number> = {
       page: urlState.page,
     };
     

@@ -60,11 +60,11 @@ export function FavoritesProvider({ children }: { children: React.ReactNode }) {
     };
 
     window.addEventListener('storage', handleStorageChange);
-    window.addEventListener('favorites-updated' as any, handleFavoritesUpdate);
+    window.addEventListener('favorites-updated', handleFavoritesUpdate as EventListener);
 
     return () => {
       window.removeEventListener('storage', handleStorageChange);
-      window.removeEventListener('favorites-updated' as any, handleFavoritesUpdate);
+      window.removeEventListener('favorites-updated', handleFavoritesUpdate as EventListener);
     };
   }, []);
 

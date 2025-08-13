@@ -1,7 +1,10 @@
+'use client';
+
 import { useCallback, useMemo } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { UrlState } from '@/types';
 import { DEFAULT_URL_STATE, URL_PARAMS } from '@/constants';
+
 
 export function useUrlState() {
   const router = useRouter();

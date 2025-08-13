@@ -21,8 +21,8 @@ export function Pagination({ pagination, onPageChange }: PaginationProps) {
     } else {
       pages.push(1);
       
-      let start = Math.max(2, currentPage - sidePages);
-      let end = Math.min(totalPages - 1, currentPage + sidePages);
+      const start = Math.max(2, currentPage - sidePages);
+      const end = Math.min(totalPages - 1, currentPage + sidePages);
       
       if (start > 2) {
         pages.push(-1);
