@@ -1,4 +1,4 @@
-import Link from 'next/link';
+export const dynamic = 'force-dynamic';
 
 export default function NotFound() {
   return (
@@ -9,12 +9,12 @@ export default function NotFound() {
         <p className="text-gray-600 dark:text-gray-400 mb-6">
           The character you&apos;re looking for doesn&apos;t exist in this dimension.
         </p>
-        <Link
-          href="/"
+        <button
+          onClick={() => window.location.href = '/'}
           className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
         >
           Return to Home
-        </Link>
+        </button>
       </div>
     </div>
   );

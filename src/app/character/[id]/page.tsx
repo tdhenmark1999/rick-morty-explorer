@@ -6,6 +6,8 @@ import { CharacterDetail } from '@/components/CharacterDetail';
 import { CharacterDetailSkeleton } from '@/components/Loading';
 import { ErrorState } from '@/components/ErrorState';
 
+export const dynamic = 'force-dynamic';
+
 export default function CharacterPage() {
   const params = useParams();
   const characterId = parseInt(params.id as string, 10);

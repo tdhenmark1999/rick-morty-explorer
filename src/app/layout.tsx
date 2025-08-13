@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from './providers';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { FavoritesCounter } from '@/components/FavoritesCounter';
+import { Suspense } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,7 +67,9 @@ export default function RootLayout({
               </div>
             </header>
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              {children}
+              <Suspense fallback={<div className="flex justify-center items-center h-64">Loading...</div>}>
+                {children}
+              </Suspense>
             </main>
           </div>
         </Providers>
