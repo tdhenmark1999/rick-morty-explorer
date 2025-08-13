@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Search, Filter, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import { useUrlState, useDebounce } from '@/hooks';
 import { CHARACTER_STATUS_OPTIONS, CHARACTER_GENDER_OPTIONS, SORT_OPTIONS, APP_CONFIG } from '@/constants';
 
